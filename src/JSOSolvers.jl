@@ -40,10 +40,13 @@ function normM!(n, x, M, z)
   end
 end
 
+# Just to test if I am in Dev package for JSOSolvers
+greet() = "Hey there!! You are in DEV package for JSOSolvers, Wouhouuuuu!"
+
 # Unconstrained solvers
 include("lbfgs.jl")
 include("trunk.jl")
-include("fomo.jl")
+include("FirstOrderMethods/main.jl")
 
 # Unconstrained solvers for NLS
 include("trunkls.jl")
